@@ -1,0 +1,15 @@
+h1 {
+    color:#000000;
+}
+
+h1 span {
+    color: #b36206;
+}
+
+footer a {
+    text-transform: uppercase;
+}
+
+a {
+    text-transform: lowercase;
+}
