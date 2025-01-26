@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 h1 {
     color:#000000;
 }
@@ -6,10 +13,8 @@ h1 span {
     color: #b36206;
 }
 
-footer a {
-    text-transform: uppercase;
-}
-
-a {
-    text-transform: lowercase;
+.sobre-nosotros {
+    background-color: red;
+    width: 200px;
+    padding: 25px;
 }
