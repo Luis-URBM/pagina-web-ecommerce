@@ -5,16 +5,44 @@ html {
     box-sizing: inherit;
 }
 
-h1 {
-    color:#000000;
+/* Globales */
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
-h1 span {
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nombre-sitio {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   text-align: center;
+}
+
+.nombre-sitio span {
     color: #b36206;
 }
 
-.sobre-nosotros {
-    background-color: red;
-    width: 200px;
-    padding: 25px;
+
+
+.contenedor-navegacion {
+    border-top: 1px solid #afafaf;
+}
+
+.navegacion-principal {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.hero {
+    background-image: url(../img/principal.png);
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
