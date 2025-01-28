@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -7,42 +8,88 @@ html {
 
 /* Globales */
 
+h1, h2, h3 {
+    font-family: "Tilt Warp", serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: "Nunito", serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: #000000;
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 .nombre-sitio {
-   margin-top: 50px;
-   margin-bottom: 50px;
+   margin-top: 2.5rem;
+   margin-bottom: 2.5rem;
    text-align: center;
+   font-size: 6rem;
 }
 
 .nombre-sitio span {
-    color: #b36206;
+    color: #cb7f0c;
 }
 
 
 
 .contenedor-navegacion {
-    border-top: 1px solid #afafaf;
+    border-top: .1rem solid #afafaf;
 }
 
 .navegacion-principal {
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
  
 .hero {
     background-image: url(../img/principal.png);
-    height: 520px;
+    height: 48rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+/* Categorias */
+
+.categorias h2 {
+    font-size: 3.4rem;
+}
+
+.categorias h2 {
+    text-align: center;
+}
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+}
+.categoria a:hover {
+    background-color: #edbf29;
+    color: #000000;
+
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+}
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
