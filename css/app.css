@@ -18,6 +18,10 @@ h2 {
     font-size: 3.4rem;
 }
 
+h3 {
+    font-size: 2.8rem;
+}
+
 body {
     font-family: "Nunito", serif;
     font-weight: 500;
@@ -125,23 +129,18 @@ a {
 
 /* Listado de productos*/
 
-.contenido-principal {
-}
-
-.listado.productos {
-
-}
-
 .producto {
-    background-color: #e9be30;
+    background-color: #f2d349;
 }
 
 .texto-producto {
     text-align: center;
+    padding: 3rem;
 }
 
 .texto-producto h3 {
     margin: 0;
+    margin-bottom: 1rem;
 }
 
 .texto-producto p {
@@ -151,4 +150,102 @@ a {
 .texto-producto .precio {
     font-size: 3rem;
     font-weight: 900;
+}
+
+.texto-producto a {
+    background-color: #000000;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1rem;
+    transition: background-color 0.3s ease-out;
+}
+
+.texto-producto a:hover {
+    background-color: #525252;    
+}
+
+.listado-productos {
+    display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   column-gap: 2rem;
+   row-gap: 2rem;
+}
+
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img {
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(2) img, 
+.producto:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+/* Footer */
+
+.site-footer {
+    border-top: .1rem solid #afafaf;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.site-footer h3 {
+    margin-bottom: 2rem;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+
+.grid-footer h3 {
+    font-size: 2.5rem;
+}
+
+.footer-menu a {
+    display: block;
+    line-height: 3rem;
+}
+
+.copyright {
+    text-align: center;
 }
