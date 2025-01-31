@@ -94,6 +94,7 @@ a {
 .categoria a:hover {
     background-color: #edbf29;
     color: #000000;
+    transition: background-color 0.3s ease-in-out;
 
     border-bottom-right-radius: 2.5rem;
     border-bottom-left-radius: 2.5rem;
@@ -248,4 +249,18 @@ a {
 
 .copyright {
     text-align: center;
+}
+
+/* Nosotros */
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr) );
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
 }
