@@ -80,6 +80,28 @@ a {
     text-align: center;
 }
 
+.max-width-30 {
+    max-width: 30rem;
+}
+
+.btn {
+    background-color: #cb7f0c;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1rem;
+    transition: background-color 0.3s ease-out;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #9c610a; 
+    color: #ffffff;
+    transition: background-color 0.1s ease-in-out;
+}
+
+
 /* Categorias */
 
 .categorias h2 {
@@ -106,6 +128,7 @@ a {
     gap: 2rem;
     padding-bottom: 2rem;
 }
+
 
 /* bloque nosotros */
 
@@ -263,4 +286,56 @@ a {
 .informacion-nosotros {
     display: flex;
     flex-direction: column;
+}
+
+/* Blog */
+
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.entrada {
+    border-bottom: 2px solid #afafaf;
+    padding-bottom: 4rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+.entrada-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p {
+    font-weight: 900;
+}
+
+.entrada-meta span {
+    color: #cb7f0c;
+}
+
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/* Galeria */
+
+.galeria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
 }
