@@ -15,11 +15,23 @@ h1, h2, h3 {
 
 h2 {
     padding: 3rem;
-    font-size: 3.4rem;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 4rem;
+    }
 }
 
 h3 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
 }
 
 body {
@@ -48,7 +60,13 @@ a {
    margin-top: 2.5rem;
    margin-bottom: 2.5rem;
    text-align: center;
-   font-size: 6rem;
+   font-size: 5rem;
+}
+
+@media (min-width: 768px) {
+    .nombre-sitio {
+        font-size: 6rem;
+    }
 }
 
 .nombre-sitio span {
@@ -64,15 +82,30 @@ a {
 .navegacion-principal {
     padding: 2rem 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
  
 .hero {
     background-image: url(../img/principal.png);
-    height: 48rem;
+    height: 28rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 48rem;
+    }
 }
 
 /*Utilidades */
@@ -109,12 +142,28 @@ a {
 .categorias h2 {
     text-align: center;
 }
+
+.categoria img {
+    width: 100%;
+}
+
 .categoria a {
     text-align: center;
     display: block;
     padding: 1.5rem;
     font-size: 2.5rem;
 }
+
+.categoria {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .categoria {
+        margin-bottom: 0;
+    }
+}
+
 .categoria a:hover {
     background-color: #edbf29;
     color: #000000;
@@ -124,33 +173,59 @@ a {
     border-bottom-left-radius: 2.5rem;
 }
 
-.listado-categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding-bottom: 2rem;
+@media (min-width: 768px) {
+    .listado-categorias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
 }
-
-
+ 
 /* bloque nosotros */
 
 .sobre-nosotros {
-    background-image: linear-gradient( to right, transparent 40%,
+    background-image: linear-gradient( to bottom, transparent 40%,
      #f2db8f 55%, #edbf29 70%, #ed8e29 100%), url(../img/nosotros.png);
      background-position: left center;
-     padding: 15rem 0rem;
      background-repeat: no-repeat;
      background-size: 100%, 115rem;
 }
 
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        background-image: linear-gradient( to right, transparent 40%,
+         #f2db8f 55%, #edbf29 70%, #ed8e29 100%), url(../img/nosotros.png);
+         background-position: left center;
+         padding: 5rem 0rem;
+         background-repeat: no-repeat;
+         background-size: 100%, 135rem;
+    }
+}
+
 .sobre-nosotros-grid {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 20rem;
+    }
 }
 
 .texto-nosotros {
-    flex-basis: 50%;
-    padding-left: 20rem;
+    grid-row: 2 / 3;
+    padding: 4rem;
+}
+
+@media (min-width: 768px) {
+    .texto-nosotros {
+        grid-column: 2 / 3;
+        padding-right: 2rem;
+    }
 }
 
 /* Listado de productos*/
