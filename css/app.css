@@ -95,7 +95,7 @@ a {
 }
  
 .hero {
-    background-image: url(../img/principal.png);
+    background-image: url(../img/principal.jpg);
     height: 28rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,7 +195,7 @@ a {
 
 .sobre-nosotros {
     background-image: linear-gradient( to bottom, transparent 40%,
-     #f2db8f 55%, #edbf29 70%, #ed8e29 100%), url(../img/nosotros.png);
+     #f2db8f 55%, #edbf29 70%, #ed8e29 100%), url(../img/nosotros.jpg);
      background-position: center, top;
      background-repeat: no-repeat;
      background-size: 100%, 70rem;
@@ -204,7 +204,7 @@ a {
 @media (min-width: 768px) {
     .sobre-nosotros {
         background-image: linear-gradient( to right, transparent 40%,
-         #f2db8f 55%, #edbf29 70%, #ed8e29 100%), url(../img/nosotros.png);
+         #f2db8f 55%, #edbf29 70%, #ed8e29 100%), url(../img/nosotros.jpg);
          background-position: left center;
          padding: 5rem 0rem;
          background-size: 100%, 135rem;
